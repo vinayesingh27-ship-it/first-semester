@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NEON TASK Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+
+        <aside class="sidebar">
+            <h2>⚡ NEON TASK</h2>
+            <p class="menu-title">MENU</p>
+            <a class="active">🏠 Dashboard</a>
+            <a>📋 My Tasks</a>
+            <a>⭐ Important</a>
+            <a>⚙️ Settings</a>
+
+            <div class="side-bottom">
+                <h3>Stay Focused!</h3>
+                <p>Small steps create big success.</p>
+            </div>
+        </aside>
+
+        <main class="main">
+
+            <header>
+                <div>
+                    <h1>Dashboard</h1>
+                    <p>Welcome back! Let's get things done.</p>
+                </div>
+                <div class="clock" id="clock">00:00:00</div>
+            </header>
+
+            <section class="hero">
+                <div>
+                    <span>YOUR PRODUCTIVITY</span>
+                    <h1>Make Today Amazing 🚀</h1>
+                    <p>Focus on your goals and achieve more.</p>
+                </div>
+                <div class="hero-icon">⚡</div>
+            </section>
+
+            <section class="stats">
+                <div class="stat-card">
+                    <span>Total Tasks</span>
+                    <h2 id="total">0</h2>
+                    <p>All your tasks</p>
+                </div>
+
+                <div class="stat-card">
+                    <span>Completed</span>
+                    <h2 id="completed">0</h2>
+                    <p>Successfully done</p>
+                </div>
+
+                <div class="stat-card">
+                    <span>Remaining</span>
+                    <h2 id="remaining">0</h2>
+                    <p>Keep going!</p>
+                </div>
+            </section>
+
+            <section class="task-section">
+                <h2>My Tasks 📝</h2>
+
+                <div class="input-area">
+                    <input type="text" id="taskInput"
+                    placeholder="Enter your new task...">
+
+                    <button onclick="addTask()">+ Add Task</button>
+                </div>
+
+                <div id="taskList"></div>
+            </section>
+
+            <section class="progress-section">
+                <h2>Daily Progress</h2>
+                <div class="progress-info">
+                    <span>Completed Tasks</span>
+                    <span id="percentage">0%</span>
+                </div>
+
+                <div class="progress-bar">
+                    <div id="progress"></div>
+                </div>
+            </section>
+
+            <footer>
+                Made with ❤️ using HTML, CSS & JavaScript
+            </footer>
+
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
